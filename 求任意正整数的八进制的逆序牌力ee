@@ -1,0 +1,17 @@
+#include<windows.h>
+#include<stdio.h>
+int main()
+{
+	int n=0,m=0;
+	printf("请输入一个正整数:");
+	scanf_s("%d",&m);
+	printf("逆序的八进制表示为：");
+	while (m>0)
+	{
+		n = m % 8;
+		printf("%d", n);
+		m /= 8;
+
+	}
+	return 0;
+}
