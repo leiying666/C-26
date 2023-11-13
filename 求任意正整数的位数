@@ -1,0 +1,16 @@
+#include<windows.h>
+#include<stdio.h>
+int main()
+{
+	long long num=0;
+	int c = 0;
+	printf("请输入一个正整数:");
+	scanf_s("%lld",&num);
+	while (num!=0)
+	{
+		num /= 10;
+		c++;
+	}
+	printf("该数字的位数为%d", c);
+	return 0;
+}
