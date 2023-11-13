@@ -1,0 +1,21 @@
+#include<windows.h>
+#include<stdio.h>
+int main()
+{
+	int n=0,m=0;
+	int num = 0;
+	scanf_s("%d", &num);
+	m = num;
+	while (m)
+	{
+		n = n * 10 + m % 10;
+		m = m / 10;
+	}
+	printf("n=%d\n", n);
+	if (n == num)
+		printf("num为对称数");
+	if (n != num)
+		printf("num不是对称数");
+
+	return 0;
+}
